@@ -29,3 +29,4 @@ RUN echo "export GOPROXY=https://goproxy.io,direct" >> /etc/profile
 RUN echo "source /etc/profile" >> /root/.bashrc
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN apt install ./google-chrome-stable_current_amd64.deb -y
+RUN apt install git -y
