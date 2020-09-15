@@ -25,7 +25,7 @@ RUN echo PATH="\$PATH:/usr/local/go/bin" >> /etc/profile
 RUN echo "export GOROOT=/usr/local/go"  >> /etc/profile
 RUN echo "export GOBIN=$GOROOT/bin"  >> /etc/profile
 RUN echo "export GOPATH=/gopath"  >> /etc/profile
-RUN echo "export GOPROXY=https://goproxy.io,direct" >> /etc/profile
+RUN echo "export GOPROXY=https://goproxy.cn,direct" >> /etc/profile
 RUN echo "source /etc/profile" >> /root/.bashrc
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN apt install ./google-chrome-stable_current_amd64.deb -y
